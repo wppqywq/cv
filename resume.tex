@@ -1,0 +1,234 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[style=ieee]{biblatex}
+\addbibresource{ref.bib}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\Large YOUYOU YANG} & Email : \href{mailto:youyou.yang@mail.mcgill.ca}{youyou.yang@mail.mcgill.ca}\\
+  Github: \href{https://github.com/wppqywq}{wppqywq} & Mobile : (438)941-6404 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mcgill University}{Montréal, CA}
+      {Bachelor of Science in Physics and Computer Science  %;  GPA: 3.53/4.0
+      }{Aug. 2019 -- June. 2023}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Quantum Mechanics, Astrophysics, Mathematical Analysis, Data Science, Machine Learning, Algorithm Design, and etc.}
+          {}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {BorgWarner China Technical center}{Shanghai, CN}
+      {Software Development Intern}{July 2021 - August 2021}
+      \resumeItemListStart
+        \resumeItem{Task 1}{Develop the \textbf{communication protocol, interface and routing} in Geely Lotus automobile controller based on AutoSAR.}
+        \resumeItem{Activity}{Generated interface files in C using \textbf{Python} scripting.}
+        \resumeItem{Task 2}{Led upper computer modularization for "Automatic Express Car" project, implementing fixed-time and fixed-point transportation with \textbf{ROS} package on \textbf{Raspberry Pi}.}
+        \resumeItem{Activity}{Wrote Linux shell scripts to regularly run Python scripts, sending signals to lower computer to run to specified coordinates on GMapping package-built graph.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Dreame Tech}{Suzhou, CN}
+      {Software Testing Intern}{May 2021 - June 2021}
+      \resumeItemListStart
+        \resumeItem{Task}{Test beta version of Dreame Z10 Robot Vacuum cleaner.}
+        \resumeItem{Activity}{Managed firmware of the robot and control features of the Mijia app using Xmind. Captured log data with \textbf{Bash} scripts to identify and debug issues. Performed version management and problem reporting on \textbf{Jira} to assist developers in resolving bugs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {McGill ATLAS Group}{Montréal, CA}
+      {Undergraduate Researcher}{May - Dec 2022}
+      \resumeItemListStart
+      
+      \resumeItem{Sep - Dec 2022}
+          {
+          \textbf{Research on the parameters of Effective Field Theory Lagrangian}}
+          \begin{itemize}
+            \item Supervised by Prof. Brigitte Vachon and John McGowan.
+            \item Estimate the parameters through maximum likelihood estimation (\textbf{MLE}) fitting method. Focused on the VBS \(W\gamma\) reaction data and analyzed the impact of systematic uncertainty on the confidence level.
+          \end{itemize}
+        \resumeItem{May - Aug 2022}
+          {
+          \textbf{Studies of gauge bosons self-interactions in high-energy proton-proton collisions}}
+          \begin{itemize}
+            \item Supervised by Prof. Brigitte Vachon, John McGowan and Xingguo Li.
+            \item Funded by McGill Science Undergraduate Research Awards (\textbf{SURA}s).
+            \item Analyzed Vector boson scattering (VBS) $W\gamma$ reaction data from the frame of Standard Model Effective Field Theory(\textbf{SMEFT}) with PyROOT library, to search for the existence of anomalous quartic gauge couplings (aQGC).
+          \end{itemize}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Projects}
+
+\resumeItemListStart
+
+
+\resumeItem{Apr 2023}
+  {\textbf{Building an Electrocardiogram (ECG) with Circuit and Arduino}}
+  \resumeItemListStart
+    \resumeItem{Task}{Obtained a clear and accurate ECG waveform.}
+    \resumeItem{Activity}{\textbf{Hardware design} on a breadboard circuit, including a differential amplifier, a notch filter, and a low pass filter, to measure the ECG signal. }
+    \resumeItem{Result}{After input signal though above circuit, 
+ successfully observe the signal roughly using an \textbf{oscilloscope}, and fed it into the \textbf{Arduino} board for further visualization.}
+  \resumeItemListEnd
+\resumeItem{Apr 2022}
+  {\textbf{Measurements of Lambda Cold Dark Matter parameters with Markov chain Monte Carlo method}}
+  \resumeItemListStart
+    \resumeItem{Task}{Set constraints on the basic density parameters and the Hubble's constant.}
+    \resumeItem{Activity}{Fit \textbf{cosmic microwave background (CMB)} data to the standard model of the Lambda Cold Dark Matter (\(\Lambda CDM\)) using the \textbf{Markov chain Monte Carlo (MCMC)} method.}
+  \resumeItemListEnd
+\resumeItem{May 2022}
+  {\textbf{Monte Carlo Tree Search for the Colosseum Survival game}}
+  \resumeItemListStart
+    \resumeItem{Task}{Developed an intelligent student agent using the \textbf{Monte Carlo Tree Search} algorithm to play the Colosseum Survival game.}
+    \resumeItem{Activity}{Implemented four approaches: selection, expansion, simulation, and backpropagation.}
+    \resumeItem{Result}{Successfully beat most of the random opponents and searched for the next step quickly with no significant memory usage.}
+  \resumeItemListEnd
+
+  
+\resumeItemListEnd
+
+
+
+%
+%-----------EXPERIENCE-----------------
+\section{Additional Experience: }
+\resumeItemListStart
+\resumeItem{Published Documentation}{}
+    \begin{itemize}
+        \item \textbf{Jul 2022: }\fullcite{McGowan:2819968}
+    \end{itemize}
+\resumeItem{Talks }{}
+    \begin{itemize}
+    \item \textbf{Aug 2022: }{Summer Undergraduate Research Showcase, McGill University: } \textit{Sensitivity studies in the search for Anomalous Quartic Gauge Couplings in proton-proton collisions at the LHC.}
+    \item \textbf{Aug 2022: }{ATLAS Canada Summer Student Presentations, CERN: } \textit{Sensitivity studies in the search for Anomalous Quartic Gauge Couplings in proton-proton collisions at the LHC (same).}
+    \end{itemize}
+\resumeItem {Hackathon}{}
+    \begin{itemize}
+        \item \textbf{Jan 2022: }{Hack Mcwics 22, McGill Women in Computer Science: }{Most Practical Award-}\\
+        \textit{Developing a website of Serving Size Converter.}
+    \end{itemize}
+\resumeItemListEnd
+
+
+%
+%--------SKILLS------------
+\section{Skills}
+ \resumeItemListStart
+\resumeItem{Programming Skills}{}
+    \begin{itemize}
+        \item Proficient in \textbf{Python} with experience in various libraries, including \textbf{NumPy, SciPy, Pandas,} Matplotlib, Astropy, ROS, PyROOT, and Scikit-learn.
+        \item Familiar with \textbf{C, Bash}, OCaml, Matlab. Have basic knowledge of \textbf{HTML+CSS}.
+        \item Familiar with hardware design, experienced in \textbf{Arduino and Raspberry Pi}.
+        \item Skilled in using \textbf{Linux} operating system, \textbf{Git} version control, and \LaTeX.
+    \end{itemize}
+\resumeItem {Language Skills}{}
+    \begin{itemize}
+        \item Native Mandarin speaker.
+        \item English with an overall IELTS score of 6.5.
+        \item French at a beginner's level.
+    \end{itemize}
+\resumeItemListEnd
+ 
+
+
+%\bibliographystyle{plain}
+%\bibliography{ref}
+
+%-------------------------------------------
+\end{document}
